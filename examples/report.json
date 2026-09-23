@@ -1,0 +1,9 @@
+{
+  "observations": 8,
+  "periods_per_year": 252,
+  "total_return": 0.040000000000000036,
+  "mean_period_return": 0.0057744477943849305,
+  "annualized_volatility": 0.3033620506703457,
+  "max_drawdown": -0.019704433497536922,
+  "historical_var_95": 0.01941747572815533
+}
