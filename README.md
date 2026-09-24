@@ -2,7 +2,9 @@
 
 [![Python checks](https://github.com/DrKaiqueDias/portfolio-risk-lab/actions/workflows/tests.yml/badge.svg)](https://github.com/DrKaiqueDias/portfolio-risk-lab/actions)
 
-A small Python CLI that converts a historical portfolio-value series into transparent descriptive risk metrics.
+A Python project that connects my interest in coding with my background in financial markets. It reads a series of portfolio values and calculates returns, volatility, maximum drawdown and historical VaR.
+
+The formulas and assumptions are documented below so the results can be checked directly.
 
 ## Try it
 
@@ -37,12 +39,13 @@ Requires **Python 3.11+**. Uses only the standard library; no installation or AP
 python -m unittest discover -v
 ```
 
-CI runs tests on Python 3.11, 3.12 and 3.13. Examples are synthetic. This is a compact portfolio project, not a claim of production deployment.
+Tests run on Python 3.11, 3.12 and 3.13 through GitHub Actions. The sample data is synthetic.
 
 ## Design choices
 
-Small pure functions hold the core logic; the CLI handles files, JSON output and exit codes. Invalid inputs fail explicitly instead of silently changing the data.
+Calculations are separate from CSV parsing and command-line handling. The code uses the standard library so the formulas are easy to inspect without a data-analysis framework.
 
 ## License
 
 MIT. Maintained by [Kaique Dias](https://github.com/DrKaiqueDias).
+
